@@ -1,0 +1,27 @@
+//Cat and Mouse
+===================================================================================================================================
+import java.io.*;
+class Cat
+{
+public static void main(String[]args)
+{
+int t=s.nextInt();
+while(t>0)
+{
+int x,y,z;
+x=s.nextInt();
+y=s.nextInt();
+z=s.nextInt();
+int r1,r2;
+r1=Math.abs(x-z);
+r2=Math.abs(y-z);
+if(r1<r2)
+System.out.print("Cat A");
+elseif(r2<r1)
+System.out.print("Cat B");
+else
+System.out.print("Cat C");
+t--;
+}
+}
+}

@@ -1,4 +1,4 @@
-//Sub-String
+Read two strings anad print second string is sub-string of first string or not
 ==================================================================================================
 import java.util.*;
 import java.io.*;

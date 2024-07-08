@@ -19,6 +19,7 @@ class Test {
             for(int j=i;j<i+k;j++)
             {
                 res=res+a[j];
+}
                 if(res==sum)
                 {
                     System.out.println("Yes");

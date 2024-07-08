@@ -1,0 +1,31 @@
+//Product subarrays
+===================================================================================================================================
+import java.util.*;
+class Test {
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int a[]=new int[n];
+        int i;
+        for(i=0;i<n;i++)
+        {
+            a[i]=s.nextInt();
+        }
+        int k=s.nextInt();
+        for(i=0;i<n;i++)
+        {
+            int res=1;
+            for(int j=i;j<n;j++)
+            {
+                res=res*a[i];
+                if(k==res)
+                {
+                    System.out.println("Yes");
+                    return;
+                }
+            }
+        }
+        if(i==n)
+        System.out.println("No");
+    }
+}

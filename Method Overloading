@@ -1,0 +1,25 @@
+//Method Overloading
+==========================================================================================================================================
+import java .util.*;
+class Test
+{
+    void show(int a,int b)
+    {
+        System.out.println("2 arg int method");
+    }
+    void show(int a,int b,int c)
+    {
+        System.out.println("3 arg int method");
+    }
+    void show(double a,double b)
+    {
+        System.out.println("2 arg double method");
+    }
+    public static void main(String[]args)
+    {
+        Test t1=new Test();
+        t1.show(11,22,33);
+        t1.show(34.7,48.5);
+        t1.show(56,99);
+    }
+}

@@ -1,0 +1,39 @@
+//Insertion Sort
+========================================================================================================================
+import java.util.*;
+class HelloWorld {
+    static void InsertionSort(int a[],int n)
+    {
+        for(int i=1;i<n;i++)
+        {
+            int j=i;
+            int c=0;
+            if(a[j]>a[j-1])
+            c=j;
+            else{
+                while(j>0&&a[j]<a[j-1])
+                {
+                    int t=a[j];
+                    a[j]=a[j-1];
+                    a[j-1]=t;
+                    c=j-1;
+                    j--;
+                }
+            }
+            System.out.print(c+" ");
+        }
+    }
+    public static void main(String[]args)
+    {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int a[]=new int[n];
+        for(int i=0;i<n;i++)
+        a[i]=s.nextInt();
+        InsertionSort(a,n);
+    }
+    }
+Output:
+7 
+274 204 -161 481 -606 -767 -351
+0 0 3 0 0 2 

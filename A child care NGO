@@ -1,0 +1,26 @@
+//A child care NGO
+===================================================================================================================
+import java.util.*;
+class TestClass
+{
+public static void main(String[]args)
+{
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+String str=sc.next();
+char ch[]=str.toCharArray();
+int count=0;
+for(int i=0;i<ch.length;i++)
+{
+if(ch[i]=='a'||ch[i]=='e'||ch[i]=='i'||ch[i]=='o'||ch[i]=='u'||ch[i]=='A'||ch[i]=='E'||ch[i]=='I'||ch[i]=='O'||ch[i]=='U')
+{
+continue;
+}
+else
+{
+count++;
+}
+}
+System.out.print(count);
+}
+}
